@@ -1,3 +1,0 @@
-[console_scripts]
-browsepy=browsepy.__main__:main
-
