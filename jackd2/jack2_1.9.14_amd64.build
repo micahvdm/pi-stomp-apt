@@ -1,0 +1,9 @@
+ dpkg-buildpackage -us -uc -ui -b
+dpkg-buildpackage: info: source package jack2
+dpkg-buildpackage: info: source version 1.9.14
+dpkg-buildpackage: info: source distribution bullseye
+dpkg-buildpackage: info: source changed by Micah John <micahvdm@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+dpkg-source: error: source package has two conflicting values - jack and jack2
+dpkg-buildpackage: error: dpkg-source --before-build . subprocess returned exit status 25

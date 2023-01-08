@@ -1,0 +1,479 @@
+ dpkg-buildpackage -us -uc -ui -b
+dpkg-buildpackage: info: source package browsepy
+dpkg-buildpackage: info: source version 0.5.6
+dpkg-buildpackage: info: source distribution bullseye
+dpkg-buildpackage: info: source changed by Micah John <micahvdm@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with python3 --buildsystem=pybuild
+   dh_auto_clean -O--buildsystem=pybuild
+I: pybuild base:217: python3.8 setup.py clean 
+running clean
+removing '/home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build' (and everything under it)
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-3.8' does not exist -- can't clean it
+   dh_autoreconf_clean -O--buildsystem=pybuild
+   dh_clean -O--buildsystem=pybuild
+ debian/rules build
+dh build --with python3 --buildsystem=pybuild
+   dh_update_autotools_config -O--buildsystem=pybuild
+   dh_autoreconf -O--buildsystem=pybuild
+   dh_auto_configure -O--buildsystem=pybuild
+I: pybuild base:217: python3.8 setup.py config 
+running config
+   dh_auto_build -O--buildsystem=pybuild
+I: pybuild base:217: /usr/bin/python3 setup.py build 
+running build
+running build_py
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/compat.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/exceptions.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/stream.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/mimetype.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/__main__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/manager.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/file.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/__meta__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/widget.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+copying browsepy/appconfig.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_compat.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_module.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_file.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_transform.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_app.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_plugins.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_extensions.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/runner.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/test_main.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/utils.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+copying browsepy/tests/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated
+copying browsepy/tests/deprecated/test_plugins.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated
+copying browsepy/tests/deprecated/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/plugin
+copying browsepy/tests/deprecated/plugin/player.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/plugin
+copying browsepy/tests/deprecated/plugin/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/plugin
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform
+copying browsepy/transform/glob.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform
+copying browsepy/transform/htmlcompress.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform
+copying browsepy/transform/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin
+copying browsepy/plugin/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player
+copying browsepy/plugin/player/tests.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player
+copying browsepy/plugin/player/playable.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player
+copying browsepy/plugin/player/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/base.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/subdir.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/remove.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/400.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/browse.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+copying browsepy/templates/404.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-book-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-semibold-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-book-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-semibold-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-light-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/demo.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-light-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-book-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/icomoon.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-bookitalic-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-lightitalic-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-semibold-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-lightitalic-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/icomoon.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-light-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/icomoon.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-semibold-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-light-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/icomoon.svg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-bookitalic-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/fonts/cooperhewitt-book-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts
+copying browsepy/static/giorgio.jpg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static
+copying browsepy/static/base.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static
+copying browsepy/static/browse.directory.head.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static
+copying browsepy/static/browse.directory.body.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/templates
+copying browsepy/plugin/player/templates/audio.player.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/templates
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image
+copying browsepy/plugin/player/static/image/jplayer.blue.monday.jpg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image
+copying browsepy/plugin/player/static/image/jplayer.blue.monday.video.play.png -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image
+copying browsepy/plugin/player/static/image/jplayer.blue.monday.seeking.gif -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+copying browsepy/plugin/player/static/js/jquery.jplayer.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+copying browsepy/plugin/player/static/js/jquery.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+copying browsepy/plugin/player/static/js/jplayer.playlist.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+copying browsepy/plugin/player/static/js/jquery.jplayer.swf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+copying browsepy/plugin/player/static/js/base.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css
+copying browsepy/plugin/player/static/css/jplayer.blue.monday.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css
+copying browsepy/plugin/player/static/css/browse.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css
+copying browsepy/plugin/player/static/css/base.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css
+copying browsepy/plugin/player/static/css/jplayer.blue.monday.min.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css
+   dh_auto_test -O--buildsystem=pybuild
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary --with python3 --buildsystem=pybuild
+   dh_testroot -O--buildsystem=pybuild
+   dh_prep -O--buildsystem=pybuild
+   dh_auto_install -O--buildsystem=pybuild
+I: pybuild base:217: /usr/bin/python3 setup.py install --root /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy 
+running install
+running build
+running build_py
+running install_lib
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/compat.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/exceptions.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/stream.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/mimetype.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_compat.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_module.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_file.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_transform.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/plugin/player.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/plugin/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/test_plugins.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/deprecated/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_app.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_plugins.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_extensions.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/runner.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/test_main.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/utils.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/tests/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/__main__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/tests.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/playable.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/templates/audio.player.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image/jplayer.blue.monday.jpg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image/jplayer.blue.monday.video.play.png -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/image/jplayer.blue.monday.seeking.gif -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js/jquery.jplayer.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js/jquery.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js/jplayer.playlist.min.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js/jquery.jplayer.swf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/js/base.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css/jplayer.blue.monday.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css/browse.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css/base.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/player/static/css/jplayer.blue.monday.min.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/plugin/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/manager.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/file.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/__meta__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/base.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/subdir.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/remove.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/400.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/browse.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/templates/404.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/templates
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform/glob.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform/htmlcompress.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/transform/__init__.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/widget.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static
+creating /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-book-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-book-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-light-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/demo.html -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-light-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-book-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/icomoon.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-semibold-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/icomoon.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-light-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/icomoon.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-semibold-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-light-webfont.ttf -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/icomoon.svg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.eot -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff2 -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/fonts/cooperhewitt-book-webfont.woff -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static/fonts
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/giorgio.jpg -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/base.css -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/browse.directory.head.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/static/browse.directory.body.js -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/static
+copying /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/.pybuild/cpython3_3.8/build/browsepy/appconfig.py -> /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/compat.py to compat.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/exceptions.py to exceptions.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/stream.py to stream.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/mimetype.py to mimetype.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_compat.py to test_compat.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_module.py to test_module.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_file.py to test_file.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_transform.py to test_transform.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/player.py to player.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/test_plugins.py to test_plugins.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_app.py to test_app.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_plugins.py to test_plugins.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_extensions.py to test_extensions.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/runner.py to runner.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/test_main.py to test_main.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/utils.py to utils.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/tests/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/__main__.py to __main__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/tests.py to tests.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/playable.py to playable.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/player/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/plugin/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/manager.py to manager.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/file.py to file.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/__meta__.py to __meta__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform/glob.py to glob.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform/htmlcompress.py to htmlcompress.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/transform/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/widget.py to widget.cpython-38.pyc
+byte-compiling /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy/appconfig.py to appconfig.cpython-38.pyc
+running install_egg_info
+running egg_info
+creating browsepy.egg-info
+writing browsepy.egg-info/PKG-INFO
+writing dependency_links to browsepy.egg-info/dependency_links.txt
+writing entry points to browsepy.egg-info/entry_points.txt
+writing requirements to browsepy.egg-info/requires.txt
+writing top-level names to browsepy.egg-info/top_level.txt
+writing manifest file 'browsepy.egg-info/SOURCES.txt'
+reading manifest file 'browsepy.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+writing manifest file 'browsepy.egg-info/SOURCES.txt'
+Copying browsepy.egg-info to /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info
+Skipping SOURCES.txt
+running install_scripts
+Installing browsepy script to /home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6/debian/browsepy/usr/bin
+   dh_installdocs -O--buildsystem=pybuild
+   dh_installchangelogs -O--buildsystem=pybuild
+   dh_python3 -O--buildsystem=pybuild
+E: dh_python3 dh_python3:176: no package to act on (python3-foo or one with ${python3:Depends} in Depends)
+   dh_installinit -O--buildsystem=pybuild
+   debian/rules override_dh_installsystemd
+make[1]: Entering directory '/home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6'
+dh_installsystemd  --name=browsepy.service
+make[1]: Leaving directory '/home/hackerman3000/Deb_Builds/browsepy/browsepy-0.5.6'
+   dh_perl -O--buildsystem=pybuild
+   dh_link -O--buildsystem=pybuild
+   dh_strip_nondeterminism -O--buildsystem=pybuild
+   dh_compress -O--buildsystem=pybuild
+   dh_fixperms -O--buildsystem=pybuild
+   dh_missing -O--buildsystem=pybuild
+   dh_installdeb -O--buildsystem=pybuild
+   dh_gencontrol -O--buildsystem=pybuild
+dpkg-gencontrol: warning: Depends field of package browsepy: substitution variable ${shlibs:Depends} used, but is not defined
+   dh_md5sums -O--buildsystem=pybuild
+   dh_builddeb -O--buildsystem=pybuild
+dpkg-deb: building package 'browsepy' in '../browsepy_0.5.6_all.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../browsepy_0.5.6_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian browsepy_0.5.6_amd64.changes ...
+E: browsepy changes: bad-distribution-in-changes-file bullseye
+E: browsepy: copyright-file-contains-full-gpl-license
+E: browsepy: description-starts-with-package-name
+E: browsepy: extended-description-is-empty
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/plugin/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/plugin/player/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/
+E: browsepy: package-installs-python-pycache-dir usr/lib/python3.8/dist-packages/browsepy/transform/__pycache__/
+E: browsepy: python-package-missing-depends-on-python
+E: browsepy: python-script-but-no-python-dep usr/bin/browsepy #!/usr/bin/python3
+W: browsepy: binary-without-manpage usr/bin/browsepy
+W: browsepy: copyright-has-url-from-dh_make-boilerplate
+W: browsepy: embedded-javascript-library usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/jquery.min.js please use libjs-jquery
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/ usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/PKG-INFO usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/PKG-INFO
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/dependency_links.txt usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/dependency_links.txt
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/entry_points.txt usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/entry_points.txt
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/not-zip-safe usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/not-zip-safe
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/requires.txt usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/requires.txt
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy-0.5.6.egg-info/top_level.txt usr/lib/python3/dist-packages/browsepy-0.5.6.egg-info/top_level.txt
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/ usr/lib/python3/dist-packages/browsepy/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__init__.py usr/lib/python3/dist-packages/browsepy/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__main__.py usr/lib/python3/dist-packages/browsepy/__main__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__meta__.py usr/lib/python3/dist-packages/browsepy/__meta__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/ usr/lib/python3/dist-packages/browsepy/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/__main__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/__main__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/__meta__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/__meta__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/appconfig.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/appconfig.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/compat.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/compat.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/exceptions.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/exceptions.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/file.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/file.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/manager.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/manager.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/mimetype.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/mimetype.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/stream.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/stream.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/__pycache__/widget.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/__pycache__/widget.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/appconfig.py usr/lib/python3/dist-packages/browsepy/appconfig.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/compat.py usr/lib/python3/dist-packages/browsepy/compat.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/exceptions.py usr/lib/python3/dist-packages/browsepy/exceptions.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/file.py usr/lib/python3/dist-packages/browsepy/file.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/manager.py usr/lib/python3/dist-packages/browsepy/manager.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/mimetype.py usr/lib/python3/dist-packages/browsepy/mimetype.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/ usr/lib/python3/dist-packages/browsepy/plugin/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/__init__.py usr/lib/python3/dist-packages/browsepy/plugin/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/__pycache__/ usr/lib/python3/dist-packages/browsepy/plugin/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/plugin/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/ usr/lib/python3/dist-packages/browsepy/plugin/player/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/__init__.py usr/lib/python3/dist-packages/browsepy/plugin/player/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/__pycache__/ usr/lib/python3/dist-packages/browsepy/plugin/player/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/plugin/player/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/__pycache__/playable.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/plugin/player/__pycache__/playable.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/__pycache__/tests.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/plugin/player/__pycache__/tests.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/playable.py usr/lib/python3/dist-packages/browsepy/plugin/player/playable.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/ usr/lib/python3/dist-packages/browsepy/plugin/player/static/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css/ usr/lib/python3/dist-packages/browsepy/plugin/player/static/css/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css/base.css usr/lib/python3/dist-packages/browsepy/plugin/player/static/css/base.css
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css/browse.css usr/lib/python3/dist-packages/browsepy/plugin/player/static/css/browse.css
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css/jplayer.blue.monday.css usr/lib/python3/dist-packages/browsepy/plugin/player/static/css/jplayer.blue.monday.css
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/css/jplayer.blue.monday.min.css usr/lib/python3/dist-packages/browsepy/plugin/player/static/css/jplayer.blue.monday.min.css
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image/ usr/lib/python3/dist-packages/browsepy/plugin/player/static/image/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.jpg usr/lib/python3/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.jpg
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.seeking.gif usr/lib/python3/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.seeking.gif
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.video.play.png usr/lib/python3/dist-packages/browsepy/plugin/player/static/image/jplayer.blue.monday.video.play.png
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/ usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/base.js usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/base.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/jplayer.playlist.min.js usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/jplayer.playlist.min.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/jquery.jplayer.min.js usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/jquery.jplayer.min.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/jquery.jplayer.swf usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/jquery.jplayer.swf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/static/js/jquery.min.js usr/lib/python3/dist-packages/browsepy/plugin/player/static/js/jquery.min.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/templates/ usr/lib/python3/dist-packages/browsepy/plugin/player/templates/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/templates/audio.player.html usr/lib/python3/dist-packages/browsepy/plugin/player/templates/audio.player.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/plugin/player/tests.py usr/lib/python3/dist-packages/browsepy/plugin/player/tests.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/ usr/lib/python3/dist-packages/browsepy/static/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/base.css usr/lib/python3/dist-packages/browsepy/static/base.css
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/browse.directory.body.js usr/lib/python3/dist-packages/browsepy/static/browse.directory.body.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/browse.directory.head.js usr/lib/python3/dist-packages/browsepy/static/browse.directory.head.js
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/ usr/lib/python3/dist-packages/browsepy/static/fonts/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.eot usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.woff usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.woff2 usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.woff2
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.eot usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff2 usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.woff2
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.eot usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.woff usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.woff2 usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.woff2
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.eot usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff2 usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.woff2
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.eot usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff2 usr/lib/python3/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.woff2
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/demo.html usr/lib/python3/dist-packages/browsepy/static/fonts/demo.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/icomoon.eot usr/lib/python3/dist-packages/browsepy/static/fonts/icomoon.eot
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/icomoon.svg usr/lib/python3/dist-packages/browsepy/static/fonts/icomoon.svg
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/icomoon.ttf usr/lib/python3/dist-packages/browsepy/static/fonts/icomoon.ttf
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/fonts/icomoon.woff usr/lib/python3/dist-packages/browsepy/static/fonts/icomoon.woff
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/static/giorgio.jpg usr/lib/python3/dist-packages/browsepy/static/giorgio.jpg
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/stream.py usr/lib/python3/dist-packages/browsepy/stream.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/ usr/lib/python3/dist-packages/browsepy/templates/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/400.html usr/lib/python3/dist-packages/browsepy/templates/400.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/404.html usr/lib/python3/dist-packages/browsepy/templates/404.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/base.html usr/lib/python3/dist-packages/browsepy/templates/base.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/browse.html usr/lib/python3/dist-packages/browsepy/templates/browse.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/remove.html usr/lib/python3/dist-packages/browsepy/templates/remove.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/templates/subdir.html usr/lib/python3/dist-packages/browsepy/templates/subdir.html
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/ usr/lib/python3/dist-packages/browsepy/tests/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__init__.py usr/lib/python3/dist-packages/browsepy/tests/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/ usr/lib/python3/dist-packages/browsepy/tests/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/runner.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/runner.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_app.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_app.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_compat.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_compat.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_extensions.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_extensions.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_file.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_file.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_main.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_main.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_module.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_module.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_plugins.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_plugins.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/test_transform.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/test_transform.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/__pycache__/utils.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/__pycache__/utils.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/ usr/lib/python3/dist-packages/browsepy/tests/deprecated/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__init__.py usr/lib/python3/dist-packages/browsepy/tests/deprecated/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__pycache__/ usr/lib/python3/dist-packages/browsepy/tests/deprecated/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/deprecated/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/__pycache__/test_plugins.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/deprecated/__pycache__/test_plugins.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/ usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__init__.py usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/ usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/player.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/__pycache__/player.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/plugin/player.py usr/lib/python3/dist-packages/browsepy/tests/deprecated/plugin/player.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/deprecated/test_plugins.py usr/lib/python3/dist-packages/browsepy/tests/deprecated/test_plugins.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/runner.py usr/lib/python3/dist-packages/browsepy/tests/runner.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_app.py usr/lib/python3/dist-packages/browsepy/tests/test_app.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_compat.py usr/lib/python3/dist-packages/browsepy/tests/test_compat.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_extensions.py usr/lib/python3/dist-packages/browsepy/tests/test_extensions.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_file.py usr/lib/python3/dist-packages/browsepy/tests/test_file.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_main.py usr/lib/python3/dist-packages/browsepy/tests/test_main.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_module.py usr/lib/python3/dist-packages/browsepy/tests/test_module.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_plugins.py usr/lib/python3/dist-packages/browsepy/tests/test_plugins.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/test_transform.py usr/lib/python3/dist-packages/browsepy/tests/test_transform.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/tests/utils.py usr/lib/python3/dist-packages/browsepy/tests/utils.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/ usr/lib/python3/dist-packages/browsepy/transform/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/__init__.py usr/lib/python3/dist-packages/browsepy/transform/__init__.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/__pycache__/ usr/lib/python3/dist-packages/browsepy/transform/__pycache__/
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/__pycache__/__init__.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/transform/__pycache__/__init__.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/__pycache__/glob.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/transform/__pycache__/glob.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/__pycache__/htmlcompress.cpython-38.pyc usr/lib/python3/dist-packages/browsepy/transform/__pycache__/htmlcompress.cpython-38.pyc
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/glob.py usr/lib/python3/dist-packages/browsepy/transform/glob.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/transform/htmlcompress.py usr/lib/python3/dist-packages/browsepy/transform/htmlcompress.py
+W: browsepy: python-module-in-wrong-location usr/lib/python3.8/dist-packages/browsepy/widget.py usr/lib/python3/dist-packages/browsepy/widget.py
+W: browsepy: readme-debian-contains-debmake-template
+W: browsepy: truetype-font-prohibits-installable-embedding [preview/print only] usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-book-webfont.ttf
+W: browsepy: truetype-font-prohibits-installable-embedding [preview/print only] usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-bookitalic-webfont.ttf
+W: browsepy: truetype-font-prohibits-installable-embedding [preview/print only] usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-light-webfont.ttf
+W: browsepy: truetype-font-prohibits-installable-embedding [preview/print only] usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-lightitalic-webfont.ttf
+W: browsepy: truetype-font-prohibits-installable-embedding [preview/print only] usr/lib/python3.8/dist-packages/browsepy/static/fonts/cooperhewitt-semibold-webfont.ttf
+W: browsepy: unknown-section audio
+Finished running lintian.

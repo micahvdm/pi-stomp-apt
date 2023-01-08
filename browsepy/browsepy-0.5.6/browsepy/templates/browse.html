@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% macro draw_widget(f, widget) -%}
+  {%- if widget.type == 'button' -%}
+    <a
+      href="{{ url_for(widget.endpoint, path=f.urlpath) }}"
+      class="
+        {{- widget.type -}}
+        {%- if widget.text %} text{% endif -%}
+        {%- if widget.css %} {{ widget.css }}{% endif -%}"
+      >{{ widget.text or '' }}</a>
+  {%- elif widget.type == 'link' -%}
+    <a href="{{ url_for(widget.endpoint, path=f.urlpath) }}"
+       {% if widget.css %}class="{{ widget.css }}"{% endif %}
+       >{{ widget.text or '' }}</a>
+  {%- elif widget.type == 'script' -%}
+    <script
+      src="{{ widget.src or url_for(widget.endpoint, filename=widget.filename) }}?v=4"
+      ></script>
+  {%- elif widget.type == 'stylesheet' -%}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ widget.href or url_for(widget.endpoint, filename=widget.filename) }}"/>
+  {%- elif widget.type == 'upload' -%}
+    {%- if file.parent -%}
+      <form class="upload autosubmit{% if widget.css %} {{ widget.css }}{% endif %}"
+            method="post"
+            action="{{ widget.action or url_for(widget.endpoint, path=file.urlpath) }}"
+            enctype="multipart/form-data">
+        <label>
+          <h2>{{ widget.text or 'Upload' }}</h2>
+          <input type="file" name="file[]" multiple=""/>
+        </label>
+        <input type="submit"/>
+      </form>
+    {%- endif -%}
+  {%- elif widget.type == 'subdir' -%}
+    {%- if file.parent -%}
+      <form class="subdir autosubmit">
+        <label>
+          <a href="{{ url_for(widget.endpoint, path=file.urlpath) }}">
+            <h2>Create directory</h2>
+          </a>
+        </label>
+      </form>
+    {%- endif -%}
+  {%- elif widget.type == 'html' -%}
+    {{ widget.html|safe }}
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro draw_widgets(f, place) -%}
+  {%- for widget in f.widgets -%}
+    {%- if widget.place == place -%}
+      {{ draw_widget(f, widget) }}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endmacro %}
+
+{% macro th(text, property, type='text', colspan=1) -%}
+<th{% if colspan > 1 %} colspan="{{ colspan }}"{% endif %}>
+    {% set urlpath = file.urlpath or None %}
+    {% set property_desc = '-{}'.format(property) %}
+    {% set prop = property_desc if sort_property == property else property %}
+    {% set active = ' active' if sort_property in (property, property_desc) else '' %}
+    {% set desc = ' desc' if sort_property == property_desc else '' %}
+    <a href="{{ url_for('sort', path=urlpath, property=prop) }}"
+       class="{{type}} sorting{{active}}{{desc}}"
+       >{{ text }}</a>
+</th>
+{%- endmacro %}
+
+{% block styles %}
+  {{ super() }}
+  {{ draw_widgets(file, 'styles') }}
+{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  {{ draw_widgets(file, 'head') }}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  {{ draw_widgets(file, 'scripts') }}
+{% endblock %}
+
+{% block header %}
+<h1>
+  <ol class="path">
+    {% for parent in file.ancestors[::-1] %}
+      <li>
+        <a href="{{ url_for('browse', path=parent.urlpath) }}"
+           {% if parent.is_root %}class="root"{% endif %}
+           >{{ parent.name if parent.parent else 'User-Files' }}</a>
+      </li>
+    {% endfor %}
+    {% if file.name %}
+      <li><span>{{ file.name if file.parent else 'User-Files' }}</span></li>
+    {% endif %}
+  </ol>
+</h1>
+<div class="disk-space">
+  <span>
+    Disk usage:
+  </span>
+  <span>
+    {{ file.used_disk_space }}
+  </span>
+</div>
+{% endblock %}
+
+{% block content %}
+{% block content_header %}
+{{ draw_widgets(file, 'header') }}
+{% endblock %}
+
+{% block content_table %}
+
+{% if file.parent %}
+<table class="browser">
+    <thead>
+        <tr>
+          {{ th('Name', 'text', 'text', 3) }}
+          {{ th('Filetype', 'type') }}
+          {{ th('Size', 'size', 'numeric') }}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="icon inode"></td>
+            <td class="parent"><a href="{{ url_for('browse', path=file.parent.urlpath) }}">..</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        {% for f in file.listdir(sortkey=sort_fnc, reverse=sort_reverse) %}
+            <tr>
+                {% if f.link %}
+                  <td class="icon {{ f.link.icon }}"></td>
+                  <td>{{ draw_widget(f, f.link) }}</td>
+                {% else %}
+                  <td></td>
+                  <td></td>
+                {% endif %}
+                <td>{{ draw_widgets(f, 'entry-actions') }}</td>
+                <td>{{ f.type or '' }}</td>
+                <td>{{ f.size or '' }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+{% set roordirgroups = ['Audio Files','MIDI Files','Impulse Response Files','Instruments','Amplifier Profiles'] %}
+{% set rootdirs = {
+    'Audio Files': ['Audio Loops','Audio Recordings','Audio Samples','Audio Tracks'],
+    'MIDI Files': ['MIDI Clips','MIDI Songs'],
+    'Impulse Response Files': ['Reverb IRs','Speaker Cabinets IRs'],
+    'Instruments': ['Hydrogen Drumkits','SF2 Instruments','SFZ Instruments'],
+    'Amplifier Profiles': ['Amplifier Profiles'],
+} %}
+{% for roordirgroup in roordirgroups %}
+<table class="browser rootdirgroup">
+    <thead>
+        <tr>
+            <th colspan="3">{{ roordirgroup }}</th>
+            <th>Size</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for dirname in rootdirs[roordirgroup] %}
+            {% if file.contains(dirname) %}
+            <tr>
+                <td class="icon inode"></td>
+                <td><a href="{{ url_for('browse', path=dirname) }}">{{ dirname }}</a></td>
+                <td></td>
+                <td>{{ file.childsize(dirname) }}</td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
+
+{% block content_footer %}
+{{ draw_widgets(file, 'footer') }}
+{% endblock %}
+{% endblock %}
