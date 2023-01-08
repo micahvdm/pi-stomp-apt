@@ -1,0 +1,13 @@
+Source: jack
+Section: audio
+Priority: optional
+Maintainer: Micah John <micahvdm@gmail.com>
+Build-Depends: debhelper (>=11~), libreadline-dev
+Standards-Version: 4.1.4
+Homepage: https://github.com/micahvdm/jack2
+
+Package: jack
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Jack2 package.

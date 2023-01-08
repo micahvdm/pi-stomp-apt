@@ -1,0 +1,13 @@
+Source: mod-host
+Section: audio
+Priority: optional
+Maintainer: Micah John <micahvdm@gmail.com>
+Build-Depends: debhelper (>=11~), libreadline-dev
+Standards-Version: 4.1.4
+Homepage: https://github.com/micahvdm/mod-host
+
+Package: mod-host
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: MOD-Host package.

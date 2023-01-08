@@ -1,0 +1,12 @@
+Source: pistomp-user
+Section: audio
+Priority: optional
+Maintainer: Micah John <micahvdm@gmail.com>
+Build-Depends: debhelper (>= 9)
+
+Package: pistomp-user
+#Standards-Version: 3.9.2
+#Version: 1.0.0-0
+Architecture: all
+Depends: adduser (>= 3.0), ${misc:Depends}
+Description: Common package for pi-Stomp! to take care of some system configuration like creating 'jack' user.
