@@ -1,15 +1,12 @@
-[submodule "browsepy/src"]
-	path = browsepy/src
-	url = https://github.com/micahvdm/browsepy.git/
 [submodule "jackd2/src"]
 	path = jackd2/src
-	url = https://github.com/moddevices/jack2.git/
-[submodule "libhylia/src"]
-	path = libhylia/src
-	url = https://github.com/micahvdm/hylia.git/
+	url = https://github.com/micahvdm/jack2.git
+	branch = master
 [submodule "mod-host/src"]
 	path = mod-host/src
-	url = https://github.com/moddevices/mod-host.git
+	url = https://github.com/micahvdm/mod-host.git
+	branch = pi-stomp
 [submodule "mod-ui/src"]
 	path = mod-ui/src
 	url = https://github.com/micahvdm/mod-ui.git
+	branch = ps-1.13
