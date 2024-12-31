@@ -1,0 +1,45 @@
+name: Build and Publish Debian Package for arm64
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+  pull_request:  # Optional: trigger on pull requests
+
+jobs:
+  build-deb:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up QEMU and Docker Buildx for ARM64
+      - name: Set Up QEMU
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: arm64
+
+      - name: Set Up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      # Step 3: Build the Debian package for ARM64
+      - name: Build Debian Package for ARM64
+        run: |
+          docker run --rm -v $PWD:/workspace -w /workspace \
+            --platform linux/arm64 \
+            ghcr.io/crossbuild/debian:bookworm-arm64 bash -c "
+            apt-get update && apt-get install -y cmake debhelper dh-autoreconf dh-python gperf intltool ladspa-sdk libarmadillo-dev libasound2-dev libavahi-gobject-dev libavcodec-dev libavutil-dev libbluetooth-dev libboost-dev libeigen3-dev libfftw3-dev libglib2.0-dev libglibmm-2.4-dev libgtk2.0-dev libgtkmm-2.4-dev libjack-jackd2-dev libjack-jackd2-dev liblilv-dev liblrdf0-dev libsamplerate0-dev libsigc++-2.0-dev libsndfile1-dev libsndfile1-dev libzita-convolver-dev libzita-resampler-dev lv2-dev p7zip-full python3-all python3-setuptools libreadline-dev devscripts build-essential lintian &&
+            chmod +x build-all.sh && ./build-all.sh
+          "
+        env:
+          DEB_BUILD_OPTIONS: nocheck  # Optional: skip tests during build
+
+      # Step 4: Deploy the built package to GitHub Pages
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Adjust to include your `.deb` and associated files
+          publish_branch: gh-pages  # The branch for GitHub Pages
