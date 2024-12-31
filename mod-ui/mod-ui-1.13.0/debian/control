@@ -8,7 +8,7 @@ Homepage: https://github.com/micahvdm/mod-ui
 
 Package: mod-ui
 X-Python3-Version: >= 3.6
-Architecture: all
+Architecture: arm64
 Multi-Arch: foreign
-Depends:
+Depends: authbind (>= 2.1.2)
 Description: MOD-UI package.

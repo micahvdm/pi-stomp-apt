@@ -1,5 +1,5 @@
-jack2 (1.9.14) bullseye; urgency=low
+jack2 (1.9.14) bookworm; urgency=low
 
-  * Package rebuilt for bullseye.
+  * Package rebuilt for bookworm.
 
- -- Micah John <micahvdm@gmail.com>  Tue, 23 Aug 2022 21:31:59 +0100
+ -- Micah John <micahvdm@gmail.com>  Tue, 31 Dec 2024 13:31:59 +0200

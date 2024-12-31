@@ -7,7 +7,7 @@ Standards-Version: 4.1.4
 Homepage: https://github.com/micahvdm/jack2
 
 Package: jack
-Architecture: all
+Architecture: arm64
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
 Description: Jack2 package.

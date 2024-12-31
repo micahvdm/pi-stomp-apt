@@ -1,7 +1,0 @@
-#!/bin/sh
-
-chmod 500 /etc/authbind/byport/80
-chown pistomp:pistomp /etc/authbind/byport/80
-mv /lib/systemd/system/mod-ui.service /usr/lib/systemd/system/mod-ui.service
-
-#DEBHELPER#

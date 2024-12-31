@@ -7,7 +7,7 @@ Standards-Version: 4.1.4
 Homepage: https://github.com/micahvdm/mod-host
 
 Package: mod-host
-Architecture: any
+Architecture: arm64
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
 Description: MOD-Host package.

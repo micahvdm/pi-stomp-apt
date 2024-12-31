@@ -6,20 +6,10 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-	dh $@  
+	dh $@ --with python3 --buildsystem=pybuild
 
-override_dh_auto_install:
-	dh_auto_install -- PREFIX=/usr
-
-#override_dh_install:
-#	dh_install --list-missing -X.pyc -X.pyo
-
-override_dh_auto_test:
-
-override_dh_installsystemd:
-	dh_installsystemd  --name=mod-host.service
-
-override_dh_usrlocal:
+override_dh_python3:
+	dh_python3 --no-ext-rename -O--buildsystem=pybuild
 
 override_dh_auto_configure:
     dh_auto_configure -- --prefix=/usr/local

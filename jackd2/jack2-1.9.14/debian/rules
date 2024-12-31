@@ -10,15 +10,12 @@ WAF = ./waf
 	dh $@  
 
 override_dh_auto_configure:
-	$(WAF) configure
+	$(WAF) configure -- PREFIX=/usr/local
 
 override_dh_auto_build:
 	$(WAF)
 
 override_dh_auto_install:
-	$(WAF) install
-
-override_dh_installsystemd:
-	dh_installsystemd  --name=jack.service
+	$(WAF) install -- PREFIX=/usr/local
 
 override_dh_usrlocal:

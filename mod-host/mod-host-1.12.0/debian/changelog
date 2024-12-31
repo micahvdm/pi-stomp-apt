@@ -1,5 +1,0 @@
-mod-host (1.12.0) bullseye; urgency=low
-
-  * Package rebuilt for bullseye.
-
- -- Micah John <micahvdm@gmail.com>  Tue, 23 Aug 2022 21:31:59 +0100
