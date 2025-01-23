@@ -5,7 +5,7 @@ if [ -e /usr/lib/systemd/system/mod-ui.service ]; then
 fi
 
 chmod 500 /etc/authbind/byport/80
-chown pistomp:pistomp /etc/authbind/byport/80
+chown $USER:$USER /etc/authbind/byport/80
 ln -sf /usr/lib/systemd/system/mod-ui.service /etc/systemd/system/multi-user.target.wants
 
 #DEBHELPER#
