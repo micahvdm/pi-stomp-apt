@@ -4,8 +4,5 @@ if [ -e /usr/lib/systemd/system/jack.service ]; then
     cp debian/jack.service /usr/lib/systemd/system/
 fi
 
-cp debian/jackdrc /etc/
-chmod +x /etc/jackdrc
-chown jack:jack /etc/jackdrc
 ln -sf /usr/lib/systemd/system/jack.service /etc/systemd/system/multi-user.target.wants
 #DEBHELPER#
