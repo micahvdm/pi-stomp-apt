@@ -1,0 +1,19 @@
+#! /usr/bin/dh-exec
+[linux-any] usr/local/bin/alsa_in
+[linux-any] usr/local/bin/alsa_out
+[linux-any] usr/local/lib/*/jack/audioadapter.so
+[linux-any] usr/local/lib/*/jack/jack_alsa.so
+[linux-any] usr/local/lib/*/jack/jack_alsarawmidi.so
+[linux-any] usr/local/share/dbus-1
+usr/local/bin/jack*
+usr/local/lib/*/jack/inprocess.so
+usr/local/lib/*/jack/jack_dummy.so
+usr/local/lib/*/jack/jack_loopback.so
+usr/local/lib/*/jack/jack_net.so
+usr/local/lib/*/jack/jack_netone.so
+usr/local/lib/*/jack/jack_proxy.so
+usr/local/lib/*/jack/netadapter.so
+usr/local/lib/*/jack/netmanager.so
+usr/local/lib/*/jack/profiler.so
+usr/local/lib/*/jack/zalsa_in.so
+usr/local/lib/*/jack/zalsa_out.so
