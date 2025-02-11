@@ -4,23 +4,22 @@
 #export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 #export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
-WAF = ./waf
 
 %:
 	dh $@  
 
 override_dh_auto_configure:
-	$(WAF) configure --prefix=/usr/local \
+	python3 ./waf configure --prefix=/usr/local \
 		--libdir=/usr/local/lib
 
 override_dh_auto_build:
-	$(WAF) -v build
+	python3 ./waf -v build
 
 override_dh_auto_install:
-	$(WAF) -v install --destdir=debian/tmp
+	python3 ./waf -v install --destdir=debian/tmp
 
 override_dh_auto_clean:
-	$(WAF) -v distclean || true
+	python3 ./waf -v distclean || true
 	find . -name "*.pyc" -delete
 
 override_dh_makeshlibs:
