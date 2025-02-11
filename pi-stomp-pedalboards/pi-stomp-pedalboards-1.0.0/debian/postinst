@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mv /home/pistomp/data/pedalboards /home/pistomp/data/.pedalboards
 chown -R $USER:$USER /home/pistomp/data/.pedalboards
 
 #DEBHELPER#
