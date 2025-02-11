@@ -141,7 +141,7 @@ Maintainer: micahvdm <>
 Installed-Size: 57506
 Depends: mod-ui
 Filename: pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
-Size: 56612372
+Size: 56612368
 MD5sum: 867b193b2a00684c55add1e2c15463e6
 SHA1: 37399f6890e1948fbec6f0f8fe7b96edd04e0939
 SHA256: 7492ce78e18ca613310bd5ec4f28fea2dd7b909b055ef60f4fd810d8a2e9716a
