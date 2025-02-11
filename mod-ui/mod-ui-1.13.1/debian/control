@@ -10,5 +10,5 @@ Package: mod-ui
 X-Python3-Version: >= 3.6
 Architecture: arm64
 Multi-Arch: foreign
-Depends: authbind (>= 2.1.2)
+Depends: ${shlibs:Depends}, mod-host (>= 1.13.0-1), mod-midi-merger (>= 0.1.0), browsepy (>= 0.5.7-2), authbind (>= 2.1.2), ${misc:Depends}, ${python3:Depends}
 Description: MOD-UI package for pi-Stomp.

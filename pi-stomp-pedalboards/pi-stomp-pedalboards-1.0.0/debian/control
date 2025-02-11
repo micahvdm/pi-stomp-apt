@@ -1,0 +1,13 @@
+Source: pi-stomp-pedalboards
+Section: sound
+Priority: optional
+Maintainer: micahvdm <>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://treefallsound.com
+
+Package: pi-stomp-pedalboards
+Architecture: arm64
+Multi-Arch: foreign
+Depends: mod-ui, ${misc:Depends}, ${shlibs:Depends}
+Description: pi-Stomp demo pedalboards.

@@ -3,5 +3,6 @@
 chmod 500 /etc/authbind/byport/80
 chown $USER:$USER /etc/authbind/byport/80
 ln -sf /lib/systemd/system/mod-ui.service /etc/systemd/system/multi-user.target.wants
+sed -i -e 's/collections.MutableMapping/collections.abc.MutableMapping/' /usr/local/lib/python3.11/dist-packages/tornado/httputil.py
 
 #DEBHELPER#

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ln -sf /lib/systemd/system/touchosc2midi.service /etc/systemd/system/multi-user.target.wants
+
+#DEBHELPER#

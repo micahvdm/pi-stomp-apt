@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+export PREFIX=/usr/local
+
+%:
+	dh $@
+
+override_dh_installsystemd:
+        dh_installsystemd  --name=amidithru --restart-after-upgrade

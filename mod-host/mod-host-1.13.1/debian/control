@@ -9,5 +9,5 @@ Homepage: https://github.com/micahvdm/mod-host
 Package: mod-host
 Architecture: arm64
 Multi-Arch: foreign
-Depends:
+Depends: jack2 (>= 1.9.14), ${misc:Depends}, ${shlibs:Depends}
 Description: MOD-Host package for pi-Stomp.

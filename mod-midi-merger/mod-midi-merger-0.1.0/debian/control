@@ -1,0 +1,13 @@
+Source: mod-midi-merger
+Section: sound
+Priority: optional
+Maintainer: Blokas <hello@blokas.io>
+Build-Depends: cmake, debhelper (>=11~), libjack-jackd2-dev
+Standards-Version: 4.1.4
+Homepage: https://blokas.io/modep
+
+Package: mod-midi-merger
+Architecture: arm64
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: mod-midi-merger package, see https://github.com/micahvdm/mod-midi-merger

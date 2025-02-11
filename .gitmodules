@@ -10,3 +10,23 @@
 	path = mod-ui/src
 	url = https://github.com/micahvdm/mod-ui.git
 	branch = mod-1.13
+[submodule "amidithru/src"]
+	path = amidithru/src
+	url = https://github.com/micahvdm/amidithru.git
+	branch = master
+[submodule "touchosc2midi/src"]
+	path = touchosc2midi/src
+	url = https://github.com/micahvdm/touchosc2midi.git
+	branch = master
+[submodule "mod-midi-merger/src"]
+	path = mod-midi-merger/src
+	url = https://github.com/micahvdm/mod-midi-merger.git
+	branch = master
+[submodule "browsepy/src"]
+	path = browsepy/src
+	url = https://github.com/micahvdm/browsepy.git
+	branch = master
+[submodule "libhylia/src"]
+	path = libhylia/src
+	url = https://github.com/micahvdm/Hylia.git
+	branch = master

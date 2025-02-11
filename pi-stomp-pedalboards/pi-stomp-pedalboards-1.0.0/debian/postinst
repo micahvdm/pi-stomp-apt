@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown -R $USER:$USER /home/pistomp/data/.pedalboards
+
+#DEBHELPER#
