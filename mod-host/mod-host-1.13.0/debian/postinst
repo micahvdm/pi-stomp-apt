@@ -1,8 +1,0 @@
-#!/bin/sh
-
-if [ -e /usr/lib/systemd/system/mod-host.service ]; then
-    cp debian/mod-host.service /usr/lib/systemd/system/
-fi
-
-ln -sf /usr/lib/systemd/system/mod-host.service /etc/systemd/system/multi-user.target.wants
-#DEBHELPER#
