@@ -10,12 +10,21 @@ WAF = ./waf
 	dh $@  
 
 override_dh_auto_configure:
-	$(WAF) configure -- PREFIX=/usr/local
+	$(WAF) configure --prefix=/usr/local \
+		--libdir=/usr/local/lib
 
 override_dh_auto_build:
-	$(WAF)
+	$(WAF) -v build
 
 override_dh_auto_install:
-	$(WAF) install -- PREFIX=/usr/local
+	$(WAF) -v install --destdir=debian/tmp
 
-override_dh_usrlocal:
+override_dh_auto_clean:
+	$(WAF) -v distclean || true
+	find . -name "*.pyc" -delete
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xinprocess -Xjack_alsa -Xjack_dummy
+
+override_dh_python3:
+	dh_python3 -pjackd2
