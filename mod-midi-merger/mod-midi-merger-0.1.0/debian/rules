@@ -9,14 +9,11 @@
 	dh $@  
 
 override_dh_auto_install:
-	dh_auto_install $@
-	mkdir -p $(CURDIR)/debian/mod-midi-merger/tmp
-	mv $(CURDIR)/debian/mod-midi-merger/usr/lib/jack/* $(CURDIR)/debian/mod-midi-merger/tmp/
-	rm -r $(CURDIR)/debian/mod-midi-merger/usr/lib/jack
+	dh_auto_install $@ -- PREFIX=/usr/local
 
-	mkdir -p $(CURDIR)/debian/mod-midi-merger/$(shell pkg-config --variable=libdir jack)/jack
-	mv $(CURDIR)/debian/mod-midi-merger/tmp/* $(CURDIR)/debian/mod-midi-merger/$(shell pkg-config --variable=libdir jack)/jack/
-	rm -r $(CURDIR)/debian/mod-midi-merger/tmp
+override_dh_auto_test:
+
+override_dh_usrlocal:
 
 override_dh_installsystemd:
 	dh_installsystemd --name=mod-midi-merger
