@@ -1,12 +1,12 @@
 [submodule "jackd2/src"]
 	path = jackd2/src
 	url = https://github.com/micahvdm/jack2.git
-	branch = master
+	branch = mod-upstream
 [submodule "mod-host/src"]
 	path = mod-host/src
 	url = https://github.com/micahvdm/mod-host.git
-	branch = pi-stomp
+	branch = master
 [submodule "mod-ui/src"]
 	path = mod-ui/src
 	url = https://github.com/micahvdm/mod-ui.git
-	branch = ps-1.13
+	branch = mod-1.13

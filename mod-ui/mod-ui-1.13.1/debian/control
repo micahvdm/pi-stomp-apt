@@ -11,4 +11,4 @@ X-Python3-Version: >= 3.6
 Architecture: arm64
 Multi-Arch: foreign
 Depends: authbind (>= 2.1.2)
-Description: MOD-UI package.
+Description: MOD-UI package for pi-Stomp.

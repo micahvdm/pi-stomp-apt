@@ -1,8 +1,0 @@
-#!/bin/sh
-
-if [ -e /usr/lib/systemd/system/jack.service ]; then
-    cp debian/jack.service /usr/lib/systemd/system/
-fi
-
-ln -sf /usr/lib/systemd/system/jack.service /etc/systemd/system/multi-user.target.wants
-#DEBHELPER#

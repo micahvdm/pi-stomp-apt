@@ -6,7 +6,7 @@ cd $DIR
 source ../env.sh
 
 PACKAGE=jack2
-VERSION=1.9.14
+VERSION=1.9.23
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 

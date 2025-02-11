@@ -10,4 +10,4 @@ Package: mod-host
 Architecture: arm64
 Multi-Arch: foreign
 Depends:
-Description: MOD-Host package.
+Description: MOD-Host package for pi-Stomp.
