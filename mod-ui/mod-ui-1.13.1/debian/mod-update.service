@@ -1,0 +1,11 @@
+[Unit]
+Description=MOD Update Service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/rm -rf /tmp/mod-update
+ExecStart=/usr/bin/apt-get update
+ExecStart=/usr/bin/apt-get install --only-upgrade -y pi-stomp pi-stomp-pedalboards mod-ui mod-host mod-midi-merger touchosc2midi browsepy amidithru libhylia
+
+[Install]
+WantedBy=multi-user.target

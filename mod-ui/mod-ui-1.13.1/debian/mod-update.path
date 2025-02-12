@@ -1,0 +1,9 @@
+[Unit]
+Description=Mod Update Monitor path.
+
+[Path]
+PathExists=/tmp/mod-update
+Unit=mod-update.service
+
+[Install]
+WantedBy=multi-user.target
