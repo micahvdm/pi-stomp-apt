@@ -30,3 +30,6 @@
 	path = libhylia/src
 	url = https://github.com/micahvdm/Hylia.git
 	branch = master
+[submodule "pi-stomp/src/home/pistomp/pi-stomp"]
+	path = pi-stomp/src/home/pistomp/pi-stomp
+	url = https://github.com/micahvdm/pi-stomp.git
