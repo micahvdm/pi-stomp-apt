@@ -6,6 +6,9 @@ set -e
 find . -type f -name "build-deb.sh" -exec chmod +x {} \;
 
 for i in $(ls); do
+    if [ "$i" = "docs" ]; then
+        continue
+    fi
 	if [ -d $i ]; then
 		pushd $i
 		if [ ! -e SKIP ]; then
