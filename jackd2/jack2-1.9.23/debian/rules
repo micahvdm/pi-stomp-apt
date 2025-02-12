@@ -6,27 +6,27 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-        dh $@
+    dh $@
 
 override_dh_auto_configure:
-        python3 ./waf configure --prefix=/usr/local \
-                --libdir=/usr/local/lib
+    python3 ./waf configure --prefix=/usr/local \
+            --libdir=/usr/local/lib
 
 override_dh_auto_build:
-        python3 ./waf -v build
+    python3 ./waf -v build
 
 override_dh_auto_install:
-        python3 ./waf -v install --destdir=debian/tmp
+    python3 ./waf -v install --destdir=debian/tmp
 
 override_dh_auto_clean:
-        python3 ./waf -v distclean || true
-        find . -name "*.pyc" -delete
+    python3 ./waf -v distclean || true
+    find . -name "*.pyc" -delete
 
 override_dh_makeshlibs:
-        dh_makeshlibs -Xinprocess -Xjack_alsa -Xjack_dummy
+    dh_makeshlibs -Xinprocess -Xjack_alsa -Xjack_dummy
 
 override_dh_python3:
-        dh_python3 -pjackd2
+    dh_python3 -pjackd2
 
 override_dh_installsystemd:
-        dh_installsystemd  --name=jack --restart-after-upgrade
+    dh_installsystemd  --name=jack --restart-after-upgrade

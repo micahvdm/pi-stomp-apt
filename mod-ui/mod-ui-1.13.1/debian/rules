@@ -6,13 +6,13 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-        dh $@ --with python3 --buildsystem=pybuild
+    dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_install:
-        PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
+    PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
 
 override_dh_python3:
-        dh_python3 --no-ext-rename -O--buildsystem=pybuild
+    dh_python3 --no-ext-rename -O--buildsystem=pybuild
 
 override_dh_installsystemd:
-        dh_installsystemd  --name=mod-ui --restart-after-upgrade
+    dh_installsystemd  --name=mod-ui --restart-after-upgrade
