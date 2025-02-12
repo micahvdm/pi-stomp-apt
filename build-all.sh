@@ -3,6 +3,8 @@
 
 set -e
 
+find . -type f -name "build-deb.sh" -exec chmod +x {} \;
+
 for i in $(ls); do
 	if [ -d $i ]; then
 		pushd $i

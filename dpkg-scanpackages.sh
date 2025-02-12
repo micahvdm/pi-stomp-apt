@@ -10,7 +10,7 @@ for i in $(ls); do
 		cd $i
 		if [ -e SKIP ]; then
 			echo Copying $i deb file
-			cp *.deb ../docs/pool/main/
+			cp -f *.deb ../docs/pool/main/
 			rm SKIP
 		else
 			echo Skipping copying $i due to no SKIP file.
