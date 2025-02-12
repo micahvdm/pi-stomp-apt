@@ -1,0 +1,6 @@
+debian/pistomp-wifi/enable_wifi_hotspot.sh usr/lib/pistomp-wifi/
+debian/pistomp-wifi/disable_wifi_hotspot.sh usr/lib/pistomp-wifi/
+debian/pistomp-wifi/default/hostapd.pistomp etc/default/
+debian/pistomp-wifi/dnsmasq.d/wifi-hotspot.conf etc/dnsmasq.d/
+debian/pistomp-wifi/hostapd/hostapd.conf etc/hostapd/
+debian/pistomp-wifi/wifi_check.sh etc/wpa_supplicant/

@@ -33,3 +33,4 @@
 [submodule "pi-stomp/src/home/pistomp/pi-stomp"]
 	path = pi-stomp/src/home/pistomp/pi-stomp
 	url = https://github.com/micahvdm/pi-stomp.git
+	branch = debian-package

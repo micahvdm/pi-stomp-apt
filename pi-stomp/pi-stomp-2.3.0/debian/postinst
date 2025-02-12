@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown -R pistomp:pistomp /home/pistomp/pi-stomp
+
+#DEBHELPER#
