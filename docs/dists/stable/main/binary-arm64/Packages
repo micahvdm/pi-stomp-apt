@@ -154,16 +154,16 @@ Description: debug symbols for mod-midi-merger
 Build-Ids: 6749a282e6b6c9ee4aa0d9bb074b1f790bcb8138 6d726bbd200bfb1204feb253f0807c2f4b9c1b51
 
 Package: mod-ui
-Version: 1.13.1
+Version: 1.13.1-1
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
-Installed-Size: 142
+Installed-Size: 147
 Depends: mod-host (>= 1.13.0-1), mod-midi-merger (>= 0.1.0), browsepy (>= 0.5.7-2), authbind (>= 2.1.2)
-Filename: pool/main/mod-ui_1.13.1_arm64.deb
-Size: 24904
-MD5sum: 5e2a413c91db304247624a5ab3bae79a
-SHA1: c8fe84d61347ff7f6732315ba79e352d6843ec9a
-SHA256: 71f27f18cc243591006ff086d15ff1a0e62c493262c70a75871e8bcd62f57a47
+Filename: pool/main/mod-ui_1.13.1-1_arm64.deb
+Size: 29580
+MD5sum: 94e9509b65aaeeefc6410adc3b6979b7
+SHA1: df4c427af20d6738fb8f0a87cb63dd9c1ebc09cf
+SHA256: 3a2c26be6824a7d1325e355aedb49f1602f48244a1591ab42caffa4edf4d6807
 Section: audio
 Priority: optional
 Multi-Arch: foreign
