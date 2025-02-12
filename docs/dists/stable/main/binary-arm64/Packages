@@ -174,13 +174,13 @@ Package: pi-stomp-pedalboards
 Version: 1.0.0
 Architecture: arm64
 Maintainer: micahvdm <>
-Installed-Size: 28759
+Installed-Size: 19
 Depends: mod-ui
 Filename: pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
-Size: 28309268
-MD5sum: 4e4df7b7483de8f46a49d799f2415ded
-SHA1: c9807a50a93e96e57cc7a21d8b77b17d52cb2e42
-SHA256: 60a961cafdb804d2599ddd0d37ddc43b71700ff6f93dc4d897ee3e4944c0547d
+Size: 2696
+MD5sum: cb6ba5caf94f109536b3acf850e5335c
+SHA1: 54d5513ccf534d5e2921cbe8ecd7b2585d8abb4f
+SHA256: 57c34b11987109332866535ab5fc14c3900a5b9d8ca1cfc28513a5bf705b810b
 Section: sound
 Priority: optional
 Multi-Arch: foreign
