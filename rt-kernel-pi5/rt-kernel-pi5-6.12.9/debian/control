@@ -1,0 +1,14 @@
+Source: rt-kernel-pi5
+Section: kernel
+Priority: important
+Maintainer: micahvdm <>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://treefallsound.com
+
+Package: rt-kernel-pi5
+Architecture: arm64
+Multi-Arch: foreign
+Pre-Depends: linux-image (>= 6.12.9)
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: pi-Stomp Realtime kernel.

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+CONFIG_FILE="/boot/firmware/config.txt"
+KERN1=6.12.9-v8-16k+
+KERN2=pi5-rt
+
+mkdir -p /boot/firmware/$KERN1/o/
+cp -d /usr/lib/$KERN1/overlays/* /boot/firmware/$KERN2/o/
+cp -dr /usr/lib/$KERN1/* /boot/firmware/$KERN2/
+cp -d /usr/lib/$KERN1/broadcom/* /boot/firmware/$KERN2/
+touch /boot/firmware/$KERN2/o/README
+mv /boot/vmlinuz-$KERN1 /boot/firmware/$KERN2/
+mv /boot/initrd.img-$KERN1 /boot/firmware/$KERN2/
+mv /boot/System.map-$KERN1 /boot/firmware/$KERN2/
+cp /boot/config-$KERN1 /boot/firmware/$KERN2/
+
+perl -0777 -i -pe 's/\[pi5\].*?(?=\n\[|$)//s' "$CONFIG_FILE"
+
+# Append the new [pi5] section
+cat >> "$CONFIG_FILE" << EOF
+[pi5]
+kernel=vmlinuz-$KERN1
+# initramfs initrd.img-$KERN1
+os_prefix=$KERN2/
+overlay_prefix=o/
+# Hack for spi0, cs0_pin should be unused
+dtoverlay=spi0-2cs,cs0_pin=0,cs1_pin=7
+EOF
+
+#DEBHELPER#

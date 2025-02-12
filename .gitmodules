@@ -34,3 +34,6 @@
 	path = pi-stomp/src/home/pistomp/pi-stomp
 	url = https://github.com/micahvdm/pi-stomp.git
 	branch = debian-package
+[submodule "usbmount/src"]
+	path = usbmount/src
+	url = https://github.com/rbrito/usbmount.git
