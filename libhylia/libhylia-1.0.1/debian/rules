@@ -9,13 +9,13 @@ export NOOPT=true
 export PREFIX=/usr/local
 
 %:
-	dh $@  
+		dh $@  
 
 override_dh_auto_build:
-	dh_auto_build -- PREFIX=$(PREFIX)
+		dh_auto_build -- PREFIX=$(PREFIX)
 
 override_dh_auto_install:
-	dh_auto_install -- PREFIX=$(PREFIX)
+		dh_auto_install -- PREFIX=$(PREFIX)
 
 override_dh_auto_test:
 

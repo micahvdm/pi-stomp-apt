@@ -1,14 +1,14 @@
 #!/usr/bin/make -f
 
 %:
-    dh $@
+		dh $@
 
 override_dh_auto_install:
-    dh_auto_install -- PREFIX=/usr/local
+		dh_auto_install -- PREFIX=/usr/local
 
 override_dh_auto_test:
 
 override_dh_usrlocal:
 
 override_dh_installsystemd:
-    dh_installsystemd  --name=amidithru --restart-after-upgrade
+		dh_installsystemd  --name=amidithru --restart-after-upgrade
