@@ -6,14 +6,14 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
-    	dh $@
+        dh $@
 
 override_dh_auto_install:
-    	dh_auto_install -- PREFIX=/usr/local
+        dh_auto_install -- PREFIX=/usr/local
 
 override_dh_auto_test:
 
 override_dh_usrlocal:
 
 override_dh_installsystemd:
-    	dh_installsystemd  --name=mod-host --restart-after-upgrade
+        dh_installsystemd  --name=mod-host --restart-after-upgrade
