@@ -11,3 +11,7 @@
 override_dh_install:
 		mkdir -p $(CURDIR)/debian/pi-stomp-pedalboards
 		cp -rv $(CURDIR)/home $(CURDIR)/debian/pi-stomp-pedalboards
+
+override_dh_auto_test:
+
+override_dh_usrlocal:

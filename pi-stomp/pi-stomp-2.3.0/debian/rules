@@ -12,6 +12,10 @@ override_dh_install:
 		mkdir -p $(CURDIR)/debian/pi-stomp
 		cp -rv $(CURDIR)/home $(CURDIR)/debian/pi-stomp
 
+override_dh_auto_test:
+
+override_dh_usrlocal:
+
 override_dh_installsystemd:
 		dh_installsystemd --name=mod-ala-pi-stomp
 		dh_installsystemd --name=wifi-hotspot
