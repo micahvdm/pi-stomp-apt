@@ -170,17 +170,34 @@ Multi-Arch: foreign
 Homepage: https://github.com/micahvdm/mod-ui
 Description: MOD-UI package for pi-Stomp.
 
+Package: pi-stomp
+Version: 2.3.0
+Architecture: arm64
+Maintainer: micahvdm <>
+Installed-Size: 669
+Depends: mod-ui
+Filename: pool/main/pi-stomp_2.3.0_arm64.deb
+Size: 140276
+MD5sum: 659214f02fd76d6c1b90d854cc91d73a
+SHA1: 19205b78c6aa9d659f05a2b8852f4754916305d0
+SHA256: 1741bd22ccd4a56dc44476d59f98730b97646b2270c88db5da5d180f69030428
+Section: sound
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://treefallsound.com
+Description: pi-Stomp core files.
+
 Package: pi-stomp-pedalboards
 Version: 1.0.0
 Architecture: arm64
 Maintainer: micahvdm <>
-Installed-Size: 19
+Installed-Size: 28759
 Depends: mod-ui
 Filename: pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
-Size: 2696
-MD5sum: cb6ba5caf94f109536b3acf850e5335c
-SHA1: 54d5513ccf534d5e2921cbe8ecd7b2585d8abb4f
-SHA256: 57c34b11987109332866535ab5fc14c3900a5b9d8ca1cfc28513a5bf705b810b
+Size: 28309268
+MD5sum: 4e4df7b7483de8f46a49d799f2415ded
+SHA1: c9807a50a93e96e57cc7a21d8b77b17d52cb2e42
+SHA256: 60a961cafdb804d2599ddd0d37ddc43b71700ff6f93dc4d897ee3e4944c0547d
 Section: sound
 Priority: optional
 Multi-Arch: foreign
