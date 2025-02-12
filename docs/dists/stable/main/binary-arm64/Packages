@@ -65,6 +65,42 @@ Multi-Arch: same
 Homepage: https://github.com/micahvdm/hylia
 Description: Host transport library for Ableton Link by falkTX.
 
+Package: linux-image-6.1.54-rt15-v8+
+Source: linux-upstream
+Version: 6.1.54-rt15-v8+-2
+Architecture: arm64
+Maintainer: debian <debian@debian>
+Installed-Size: 35916
+Filename: pool/main/linux-image-6.1.54-rt15-v8+_6.1.54-rt15-v8+-2_arm64.deb
+Size: 28235836
+MD5sum: 6202f34f613b649fdb2e8ed5c5da44d8
+SHA1: bcafee806e417a22eb2929de77ca5f814343d9e9
+SHA256: 8c20017f2cbe12d8f44abfa4b67d6101f369724bea74e01e8804ee202c914ff2
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.54-rt15-v8+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.1.54-rt15-v8+.
+
+Package: linux-image-6.12.9-v8-16k+
+Source: linux-upstream
+Version: 6.12.9-ga20d400dff3d-3
+Architecture: arm64
+Maintainer: pistomp <pistomp@pistomp>
+Installed-Size: 39687
+Filename: pool/main/linux-image-6.12.9-v8-16k+_6.12.9-ga20d400dff3d-3_arm64.deb
+Size: 30884416
+MD5sum: b26a11973245b589d46cfa80675653dc
+SHA1: 982eff1e8326a6aeef4d0ca229b29e3fd1fc0dfe
+SHA256: 1a674c08d97b73cff86fb9e767d7d63ab8424779e1563df14bdb33602be838ea
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.12.9-v8-16k+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.12.9-v8-16k+.
+
 Package: mod-host
 Version: 1.13.1
 Architecture: arm64
