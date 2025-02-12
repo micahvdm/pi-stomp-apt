@@ -1,14 +1,14 @@
 Package: amidithru
-Version: 1.0-2
+Version: 1.0.0
 Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 125
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34)
-Filename: pool/main/amidithru_1.0-2_arm64.deb
-Size: 12400
-MD5sum: 555489e26a868e77f9d8d6e0da389948
-SHA1: 1e3110d1ade0f2a43aee409e5b7a7f3e53a370e1
-SHA256: 777277cd140098cac7c1f588e6257f5065c743621bee59f291115e3b9c2f2a52
+Filename: docs/pool/main/amidithru_1.0.0_arm64.deb
+Size: 12308
+MD5sum: fbb351caf304d74a8fd0dc3b1c63475b
+SHA1: fb438e78ca356740d0831188710e540a71ed6b20
+SHA256: d9dffd25b93cfe9e1ece51d10487eaf0ea27eed81849b76926b8c466e83955c0
 Section: sound
 Priority: optional
 Multi-Arch: foreign
@@ -20,7 +20,7 @@ Version: 0.5.7-4
 Architecture: arm64
 Maintainer: Giedrius Trainavičius <giedrius@blokas.io>
 Installed-Size: 22
-Filename: pool/main/browsepy_0.5.7-4_arm64.deb
+Filename: docs/pool/main/browsepy_0.5.7-4_arm64.deb
 Size: 4064
 MD5sum: 12e8f24a049550e7604862040496fa34
 SHA1: 971f6b3b750b559d564784ce9b977cc6a7857d21
@@ -38,7 +38,7 @@ Version: 1.9.23
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 57
-Filename: pool/main/jack2_1.9.23_arm64.deb
+Filename: docs/pool/main/jack2_1.9.23_arm64.deb
 Size: 14816
 MD5sum: 0b58777fff183b8176224468427709aa
 SHA1: 8004e56fada8e6715daef5f73447e557ae0ef072
@@ -54,7 +54,7 @@ Version: 1.0.1-4
 Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 1009
-Filename: pool/main/libhylia_1.0.1-4_arm64.deb
+Filename: docs/pool/main/libhylia_1.0.1-4_arm64.deb
 Size: 110816
 MD5sum: d385c08d33982f4f689cc4dac5f377c2
 SHA1: e8b8b3fc9c2fab09d321d623f0a4d257ed8860ca
@@ -71,7 +71,7 @@ Version: 6.1.54-rt15-v8+-2
 Architecture: arm64
 Maintainer: debian <debian@debian>
 Installed-Size: 35916
-Filename: pool/main/linux-image-6.1.54-rt15-v8+_6.1.54-rt15-v8+-2_arm64.deb
+Filename: docs/pool/main/linux-image-6.1.54-rt15-v8+_6.1.54-rt15-v8+-2_arm64.deb
 Size: 28235836
 MD5sum: 6202f34f613b649fdb2e8ed5c5da44d8
 SHA1: bcafee806e417a22eb2929de77ca5f814343d9e9
@@ -89,7 +89,7 @@ Version: 6.12.9-ga20d400dff3d-3
 Architecture: arm64
 Maintainer: pistomp <pistomp@pistomp>
 Installed-Size: 39687
-Filename: pool/main/linux-image-6.12.9-v8-16k+_6.12.9-ga20d400dff3d-3_arm64.deb
+Filename: docs/pool/main/linux-image-6.12.9-v8-16k+_6.12.9-ga20d400dff3d-3_arm64.deb
 Size: 30884416
 MD5sum: b26a11973245b589d46cfa80675653dc
 SHA1: 982eff1e8326a6aeef4d0ca229b29e3fd1fc0dfe
@@ -107,7 +107,7 @@ Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 597
 Depends: jack2 (>= 1.9.14), libc6 (>= 2.34), libfftw3-double3 (>= 3.3.10), libfftw3-single3 (>= 3.3.10), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, liblilv-0-0 (>= 0.22.0~dfsg0), libreadline8 (>= 6.0)
-Filename: pool/main/mod-host_1.13.1_arm64.deb
+Filename: docs/pool/main/mod-host_1.13.1_arm64.deb
 Size: 89460
 MD5sum: 85b060690a1c0f655b37157600fdf70f
 SHA1: 3ea384e9fcc6b56c5739eee9dfacb1d75cbdd896
@@ -124,7 +124,7 @@ Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 157
 Depends: libc6 (>= 2.34), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125
-Filename: pool/main/mod-midi-merger_0.1.0_arm64.deb
+Filename: docs/pool/main/mod-midi-merger_0.1.0_arm64.deb
 Size: 8064
 MD5sum: 31861da628475d0c128cc2f17b38fa40
 SHA1: 252700cc8fadb8885f67ef35a0a39d288d939e09
@@ -143,7 +143,7 @@ Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 40
 Depends: mod-midi-merger (= 0.1.0)
-Filename: pool/main/mod-midi-merger-dbgsym_0.1.0_arm64.deb
+Filename: docs/pool/main/mod-midi-merger-dbgsym_0.1.0_arm64.deb
 Size: 17112
 MD5sum: f5ba31c3836b301b6e330cfc1bf65c0b
 SHA1: 422fe4d2a5be6939f1a7926cff845094af83f081
@@ -159,7 +159,7 @@ Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 137
 Depends: mod-host (>= 1.13.0-1), mod-midi-merger (>= 0.1.0), browsepy (>= 0.5.7-2), authbind (>= 2.1.2)
-Filename: pool/main/mod-ui_1.13.1_arm64.deb
+Filename: docs/pool/main/mod-ui_1.13.1_arm64.deb
 Size: 24508
 MD5sum: 913bec68796cfe00550762520c958e3b
 SHA1: b0bbfbf29ff02020ab9470dd79d5ea94b93e941e
@@ -174,25 +174,59 @@ Package: pi-stomp-pedalboards
 Version: 1.0.0
 Architecture: arm64
 Maintainer: micahvdm <>
-Installed-Size: 57506
+Installed-Size: 28759
 Depends: mod-ui
-Filename: pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
-Size: 56612368
-MD5sum: 003efad6ed6cc2c3a4be83cde920f027
-SHA1: 7762757e9198c15aa42a8bc46ae019b06da6f248
-SHA256: ef2427aab47bd3e10465bd8400baf3a136e9b97dfabdc4dfd081bd9b82e3e7e4
+Filename: docs/pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
+Size: 28309268
+MD5sum: 4e4df7b7483de8f46a49d799f2415ded
+SHA1: c9807a50a93e96e57cc7a21d8b77b17d52cb2e42
+SHA256: 60a961cafdb804d2599ddd0d37ddc43b71700ff6f93dc4d897ee3e4944c0547d
 Section: sound
 Priority: optional
 Multi-Arch: foreign
 Homepage: https://treefallsound.com
 Description: pi-Stomp demo pedalboards.
 
+Package: rt-kernel-pi34
+Version: 6.1.54
+Architecture: arm64
+Maintainer: micahvdm <>
+Installed-Size: 10
+Pre-Depends: linux-image-6.1.54-rt15-v8+ (<= 6.1.55-rt~)
+Filename: docs/pool/main/rt-kernel-pi34_6.1.54_arm64.deb
+Size: 1832
+MD5sum: 4c56d2422e280562ad38882a81ae317d
+SHA1: 0774dbe10fb1b7f1e28a772ab3acc9d35e9cb1b4
+SHA256: 08d979c0484921dd9e32dcb165e3a55541d09c64951338fad0f326b756691a7c
+Section: kernel
+Priority: important
+Multi-Arch: foreign
+Homepage: https://treefallsound.com
+Description: pi-Stomp Realtime kernel.
+
+Package: rt-kernel-pi5
+Version: 6.12.9
+Architecture: arm64
+Maintainer: micahvdm <>
+Installed-Size: 9
+Pre-Depends: linux-image-6.12.9-v8-16k+ (>= 6.12.9~)
+Filename: docs/pool/main/rt-kernel-pi5_6.12.9_arm64.deb
+Size: 1812
+MD5sum: 2e1fb2039c4e0c2773a5b04c1deb5a02
+SHA1: 8e3d1d9d34a480b1814c8a1133f41633e05ba8d3
+SHA256: 21d14933a1b127224a0b5bca4f771cdfa8aec5a8356b8239bf35263b6bdc15b2
+Section: kernel
+Priority: important
+Multi-Arch: foreign
+Homepage: https://treefallsound.com
+Description: pi-Stomp Realtime kernel.
+
 Package: touchosc2midi
 Version: 0.12.0-1
 Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 22
-Filename: pool/main/touchosc2midi_0.12.0-1_arm64.deb
+Filename: docs/pool/main/touchosc2midi_0.12.0-1_arm64.deb
 Size: 4228
 MD5sum: de67b7a6e45d92a3e8a380932eeab815
 SHA1: ce33d8b3239a2fd823ff48ebd0d9dea0790e1f88
@@ -202,4 +236,46 @@ Priority: optional
 Multi-Arch: foreign
 Homepage: https://github.com/BlokasLabs/touchosc2midi
 Description: TouchOSC 2 MIDI bridge, see https://github.com/velolala/touchosc2midi for more details.
+
+Package: usbmount
+Version: 0.0.24
+Architecture: all
+Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Installed-Size: 45
+Depends: lockfile-progs, udev
+Recommends: pmount
+Suggests: ntfs-3g
+Filename: docs/pool/main/usbmount_0.0.24_all.deb
+Size: 14332
+MD5sum: 869dcaf001332b0f1269b9af49061364
+SHA1: a6535308cb6d865f2ba5fc537ae68da22ea33c74
+SHA256: 6c55f6ae4d9fff6358c8ba0032eb68c7ac7d927403466a118a14632ba91dcad7
+Section: admin
+Priority: extra
+Homepage: http://github.com/rbrito/usbmount
+Description: automatically mount removable storage devices
+ This package automatically mounts USB mass storage devices (typically USB
+ pendrives) when they are plugged in. The mountpoints (/media/usb[0-7] by
+ default), filesystem types to consider, and mount options are
+ configurable. When multiple devices are plugged in, the first available
+ mountpoint is automatically selected. If the device provides a model name,
+ a symbolic link /var/run/usbmount/MODELNAME pointing to the mountpoint is
+ automatically created.
+ .
+ Despite the name, any removable device (like Firewire drives) is also
+ supported by USBmount.
+ .
+ USBmount is intended as a lightweight, minimalistic solution which is
+ independent of a desktop environment.
+ .
+ NOTE: The package usbmount is not meant to be used by people using a
+ regular desktop environment (like KDE, or GNOME, among others).  The
+ Desktop Environments already provide a way for users to accomplish the task
+ of automatically mounting filesystems and problems with this "auto
+ mounting" have no relation to the package usbmount.
+ .
+ The usbmount package is only meant for use with minimalistic systems (or
+ for embedded systems) and should only be installed under such
+ circumstances: problems mounting USB sticks with a regular desktop
+ environment are not bugs with the package automount.
 
