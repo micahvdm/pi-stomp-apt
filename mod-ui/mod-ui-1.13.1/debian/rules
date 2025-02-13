@@ -11,7 +11,6 @@ override_dh_auto_install:
 	mkdir -p debian/mod-ui/local/lib/
 	mv debian/tmp/* debian/mod-ui/
 	mv debian/mod-ui/usr/lib/python3.11/ debian/mod-ui/usr/local/lib/
-	mv debian/mod-ui/usr/share/ debian/usr/local/
 	rm -rf debian/mod-ui/usr/bin/
 
 override_dh_python3:
