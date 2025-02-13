@@ -9,8 +9,6 @@ export DH_VERBOSE=1
 override_dh_auto_install:
 	PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
 	mkdir -p debian/mod-ui/local/lib/
-	mv debian/tmp/home/micah/pi-stomp-apt/mod-ui/mod-ui-1.13.1/debian/tmp/usr/lib/python3.11/dist-packages/modtools/libmod_utils.so debian/mod-ui/usr/lib/python3.11/dist-packages/modtools/
-	rm -rf debian/tmp/home/
 	mv debian/tmp/* debian/mod-ui/
 	mv debian/mod-ui/usr/lib/python3.11/ debian/mod-ui/usr/local/lib/
 	mv debian/mod-ui/usr/share/ debian/usr/local/
