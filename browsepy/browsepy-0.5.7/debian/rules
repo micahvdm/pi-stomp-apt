@@ -10,7 +10,7 @@ override_dh_auto_install:
 	PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
 	mv debian/tmp/* debian/browsepy/
 	mv debian/browsepy/local/ debian/browsepy/usr/
-	mkdir debian/browsepy/usr/local/lib/
+	mkdir -p debian/browsepy/usr/local/lib/
 	mv debian/browsepy/lib/python3.11/ debian/browsepy/usr/local/lib/
 	mv debian/browsepy/usr/share/ debian/browsepy/usr/local/
 
