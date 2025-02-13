@@ -38,12 +38,12 @@ Package: jack2
 Version: 1.9.23
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
-Installed-Size: 2383
+Installed-Size: 2188
 Filename: pool/main/jack2_1.9.23_arm64.deb
-Size: 410972
-MD5sum: 339c737df1876cee77d11e0e59c2b4a2
-SHA1: 956cbbe30800c58597bcabcfc27dedf0c2b315e8
-SHA256: 5213306bdc074c2200bfc11609336fbe1f28b647d46797f4ee77d6c579cd55cd
+Size: 375888
+MD5sum: 80d4ae2e42b385608c9f89d5d3e6960f
+SHA1: 92d7f814ac49964f99a547c3c5708466bb1ea634
+SHA256: f6ea0ead87ecae288c549658e61fc491204ec0575c437298291ad7f20b084e33
 Section: audio
 Priority: optional
 Multi-Arch: foreign
@@ -143,10 +143,10 @@ Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 9011
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.33), libgcc-s1 (>= 3.0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, liblilv-0-0 (>= 0.22.0~dfsg0), libstdc++6 (>= 11), mod-host (>= 1.13.0-1), mod-midi-merger (>= 0.1.0), browsepy (>= 0.5.7-2), authbind (>= 2.1.2), python3 (<< 3.12), python3 (>= 3.11~), python3-aggdraw, python3-pil, python3-pystache, python3-serial, python3:any
 Filename: pool/main/mod-ui_1.13.1_arm64.deb
-Size: 4353212
-MD5sum: 5936a17e3bda502ea3b0a8d60c272b87
-SHA1: 97d0a2b22d4c5e42f16714803a1dcae96de03903
-SHA256: 15eff8a7c301fff326332fcad33d93614a7525e240da3efe558442eda019b1bc
+Size: 4353520
+MD5sum: 2757dde5272d88eae28ad0384002e910
+SHA1: d37b812d138d17fae22229447763a6a041dcada3
+SHA256: defcb91df8352d95eedaef409c26d29901df53ea3e710731006a6e640aceac2d
 Section: audio
 Priority: optional
 Multi-Arch: foreign
