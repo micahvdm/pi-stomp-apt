@@ -11,11 +11,7 @@ override_dh_auto_install:
 	mv debian/tmp/* debian/browsepy/
 	mv debian/browsepy/local/ debian/browsepy/usr/
 	mkdir -p debian/browsepy/usr/local/lib
-	for item in debian/browsepy/usr/*; do
-		if [ "$(basename "$item")" != "local" ]; then
-			mv "$item" debian/browsepy/usr/local/
-		fi
-	done
+	find debian/browsepy/usr -mindepth 1 -maxdepth 1 ! -name local -exec mv {} debian/browsepy/usr/local/ \;
 	mv debian/browsepy/lib/python3.11/ debian/browsepy/usr/local/lib/
 
 override_dh_python3:
