@@ -6,13 +6,13 @@ export DH_VERBOSE=1
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
+override_dh_python3:
+	dh_python3 --no-ext-rename -O--buildsystem=pybuild
+
 override_dh_auto_install:
 	PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
 	dh_auto_install --destdir=debian/tmp
 	cp -r debian/tmp/* debian/mod-ui/
-
-override_dh_python3:
-	dh_python3 --no-ext-rename -O--buildsystem=pybuild
 
 override_dh_auto_test:
 
