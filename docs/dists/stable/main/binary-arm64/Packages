@@ -195,9 +195,9 @@ Installed-Size: 10
 Pre-Depends: linux-image-6.1.54-rt15-v8+ (<= 6.1.55-rt~)
 Filename: pool/main/rt-kernel-pi34_6.1.54_arm64.deb
 Size: 1832
-MD5sum: 4c56d2422e280562ad38882a81ae317d
-SHA1: 0774dbe10fb1b7f1e28a772ab3acc9d35e9cb1b4
-SHA256: 08d979c0484921dd9e32dcb165e3a55541d09c64951338fad0f326b756691a7c
+MD5sum: 77a12a86ca0ecc77bd1bc04bd3a9bbbc
+SHA1: 848194c8a7d910d1a0486815e082f95654be545c
+SHA256: 238cba42092b1d0f1fbaae20f47bb5b6a8633b83b666fc2112f528d3a6006a2f
 Section: kernel
 Priority: important
 Multi-Arch: foreign
@@ -212,9 +212,9 @@ Installed-Size: 9
 Pre-Depends: linux-image-6.12.9-v8-16k+ (>= 6.12.9~)
 Filename: pool/main/rt-kernel-pi5_6.12.9_arm64.deb
 Size: 1812
-MD5sum: 2e1fb2039c4e0c2773a5b04c1deb5a02
-SHA1: 8e3d1d9d34a480b1814c8a1133f41633e05ba8d3
-SHA256: 21d14933a1b127224a0b5bca4f771cdfa8aec5a8356b8239bf35263b6bdc15b2
+MD5sum: fe850f991d393ee3e4a94e264d150d00
+SHA1: 1f3208172dd5d3ae175e654a8602983a54aa96cf
+SHA256: ab5d364e7bd40ac22583589572d9ca061a3cdf182277b1be17c157d7057b352c
 Section: kernel
 Priority: important
 Multi-Arch: foreign
