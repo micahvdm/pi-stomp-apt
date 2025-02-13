@@ -4,7 +4,7 @@ Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 125
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34)
-Filename: pool/main/amidithru_1.0.0_arm64.deb
+Filename: docs/pool/main/amidithru_1.0.0_arm64.deb
 Size: 12308
 MD5sum: fbb351caf304d74a8fd0dc3b1c63475b
 SHA1: fb438e78ca356740d0831188710e540a71ed6b20
@@ -20,7 +20,7 @@ Version: 0.5.7-4
 Architecture: arm64
 Maintainer: Giedrius Trainavičius <giedrius@blokas.io>
 Installed-Size: 22
-Filename: pool/main/browsepy_0.5.7-4_arm64.deb
+Filename: docs/pool/main/browsepy_0.5.7-4_arm64.deb
 Size: 4064
 MD5sum: 12e8f24a049550e7604862040496fa34
 SHA1: 971f6b3b750b559d564784ce9b977cc6a7857d21
@@ -38,7 +38,7 @@ Version: 1.9.23
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 57
-Filename: pool/main/jack2_1.9.23_arm64.deb
+Filename: docs/pool/main/jack2_1.9.23_arm64.deb
 Size: 14816
 MD5sum: 0b58777fff183b8176224468427709aa
 SHA1: 8004e56fada8e6715daef5f73447e557ae0ef072
@@ -54,7 +54,7 @@ Version: 1.0.1-4
 Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 1009
-Filename: pool/main/libhylia_1.0.1-4_arm64.deb
+Filename: docs/pool/main/libhylia_1.0.1-4_arm64.deb
 Size: 110816
 MD5sum: d385c08d33982f4f689cc4dac5f377c2
 SHA1: e8b8b3fc9c2fab09d321d623f0a4d257ed8860ca
@@ -71,7 +71,7 @@ Version: 6.1.54-rt15-v8+-2
 Architecture: arm64
 Maintainer: debian <debian@debian>
 Installed-Size: 35916
-Filename: pool/main/linux-image-6.1.54-rt15-v8+_6.1.54-rt15-v8+-2_arm64.deb
+Filename: docs/pool/main/linux-image-6.1.54-rt15-v8+_6.1.54-rt15-v8+-2_arm64.deb
 Size: 28235836
 MD5sum: 6202f34f613b649fdb2e8ed5c5da44d8
 SHA1: bcafee806e417a22eb2929de77ca5f814343d9e9
@@ -89,7 +89,7 @@ Version: 6.12.9-ga20d400dff3d-3
 Architecture: arm64
 Maintainer: pistomp <pistomp@pistomp>
 Installed-Size: 39687
-Filename: pool/main/linux-image-6.12.9-v8-16k+_6.12.9-ga20d400dff3d-3_arm64.deb
+Filename: docs/pool/main/linux-image-6.12.9-v8-16k+_6.12.9-ga20d400dff3d-3_arm64.deb
 Size: 30884416
 MD5sum: b26a11973245b589d46cfa80675653dc
 SHA1: 982eff1e8326a6aeef4d0ca229b29e3fd1fc0dfe
@@ -107,7 +107,7 @@ Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
 Installed-Size: 597
 Depends: jack2 (>= 1.9.14), libc6 (>= 2.34), libfftw3-double3 (>= 3.3.10), libfftw3-single3 (>= 3.3.10), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, liblilv-0-0 (>= 0.22.0~dfsg0), libreadline8 (>= 6.0)
-Filename: pool/main/mod-host_1.13.1_arm64.deb
+Filename: docs/pool/main/mod-host_1.13.1_arm64.deb
 Size: 89460
 MD5sum: 85b060690a1c0f655b37157600fdf70f
 SHA1: 3ea384e9fcc6b56c5739eee9dfacb1d75cbdd896
@@ -124,7 +124,7 @@ Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 157
 Depends: libc6 (>= 2.34), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125
-Filename: pool/main/mod-midi-merger_0.1.0_arm64.deb
+Filename: docs/pool/main/mod-midi-merger_0.1.0_arm64.deb
 Size: 8064
 MD5sum: 31861da628475d0c128cc2f17b38fa40
 SHA1: 252700cc8fadb8885f67ef35a0a39d288d939e09
@@ -143,7 +143,7 @@ Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 40
 Depends: mod-midi-merger (= 0.1.0)
-Filename: pool/main/mod-midi-merger-dbgsym_0.1.0_arm64.deb
+Filename: docs/pool/main/mod-midi-merger-dbgsym_0.1.0_arm64.deb
 Size: 17112
 MD5sum: f5ba31c3836b301b6e330cfc1bf65c0b
 SHA1: 422fe4d2a5be6939f1a7926cff845094af83f081
@@ -154,16 +154,16 @@ Description: debug symbols for mod-midi-merger
 Build-Ids: 6749a282e6b6c9ee4aa0d9bb074b1f790bcb8138 6d726bbd200bfb1204feb253f0807c2f4b9c1b51
 
 Package: mod-ui
-Version: 1.13.1-1
+Version: 1.13.1
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
-Installed-Size: 147
+Installed-Size: 142
 Depends: mod-host (>= 1.13.0-1), mod-midi-merger (>= 0.1.0), browsepy (>= 0.5.7-2), authbind (>= 2.1.2)
-Filename: pool/main/mod-ui_1.13.1-1_arm64.deb
-Size: 29580
-MD5sum: 94e9509b65aaeeefc6410adc3b6979b7
-SHA1: df4c427af20d6738fb8f0a87cb63dd9c1ebc09cf
-SHA256: 3a2c26be6824a7d1325e355aedb49f1602f48244a1591ab42caffa4edf4d6807
+Filename: docs/pool/main/mod-ui_1.13.1_arm64.deb
+Size: 24904
+MD5sum: 5e2a413c91db304247624a5ab3bae79a
+SHA1: c8fe84d61347ff7f6732315ba79e352d6843ec9a
+SHA256: 71f27f18cc243591006ff086d15ff1a0e62c493262c70a75871e8bcd62f57a47
 Section: audio
 Priority: optional
 Multi-Arch: foreign
@@ -176,7 +176,7 @@ Architecture: arm64
 Maintainer: micahvdm <>
 Installed-Size: 669
 Depends: mod-ui
-Filename: pool/main/pi-stomp_2.3.0_arm64.deb
+Filename: docs/pool/main/pi-stomp_2.3.0_arm64.deb
 Size: 140276
 MD5sum: 659214f02fd76d6c1b90d854cc91d73a
 SHA1: 19205b78c6aa9d659f05a2b8852f4754916305d0
@@ -193,7 +193,7 @@ Architecture: arm64
 Maintainer: micahvdm <>
 Installed-Size: 28759
 Depends: mod-ui
-Filename: pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
+Filename: docs/pool/main/pi-stomp-pedalboards_1.0.0_arm64.deb
 Size: 28309268
 MD5sum: 4e4df7b7483de8f46a49d799f2415ded
 SHA1: c9807a50a93e96e57cc7a21d8b77b17d52cb2e42
@@ -210,7 +210,7 @@ Architecture: arm64
 Maintainer: micahvdm <>
 Installed-Size: 10
 Pre-Depends: linux-image-6.1.54-rt15-v8+ (<= 6.1.55-rt~)
-Filename: pool/main/rt-kernel-pi34_6.1.54_arm64.deb
+Filename: docs/pool/main/rt-kernel-pi34_6.1.54_arm64.deb
 Size: 1832
 MD5sum: 4c56d2422e280562ad38882a81ae317d
 SHA1: 0774dbe10fb1b7f1e28a772ab3acc9d35e9cb1b4
@@ -227,7 +227,7 @@ Architecture: arm64
 Maintainer: micahvdm <>
 Installed-Size: 9
 Pre-Depends: linux-image-6.12.9-v8-16k+ (>= 6.12.9~)
-Filename: pool/main/rt-kernel-pi5_6.12.9_arm64.deb
+Filename: docs/pool/main/rt-kernel-pi5_6.12.9_arm64.deb
 Size: 1812
 MD5sum: 2e1fb2039c4e0c2773a5b04c1deb5a02
 SHA1: 8e3d1d9d34a480b1814c8a1133f41633e05ba8d3
@@ -243,7 +243,7 @@ Version: 0.12.0-1
 Architecture: arm64
 Maintainer: Blokas <hello@blokas.io>
 Installed-Size: 22
-Filename: pool/main/touchosc2midi_0.12.0-1_arm64.deb
+Filename: docs/pool/main/touchosc2midi_0.12.0-1_arm64.deb
 Size: 4228
 MD5sum: de67b7a6e45d92a3e8a380932eeab815
 SHA1: ce33d8b3239a2fd823ff48ebd0d9dea0790e1f88
@@ -262,7 +262,7 @@ Installed-Size: 45
 Depends: lockfile-progs, udev
 Recommends: pmount
 Suggests: ntfs-3g
-Filename: pool/main/usbmount_0.0.24_all.deb
+Filename: docs/pool/main/usbmount_0.0.24_all.deb
 Size: 14332
 MD5sum: 869dcaf001332b0f1269b9af49061364
 SHA1: a6535308cb6d865f2ba5fc537ae68da22ea33c74
