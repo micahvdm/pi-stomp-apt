@@ -38,12 +38,12 @@ Package: jack2
 Version: 1.9.23
 Architecture: arm64
 Maintainer: Micah John <micahvdm@gmail.com>
-Installed-Size: 57
+Installed-Size: 2383
 Filename: pool/main/jack2_1.9.23_arm64.deb
-Size: 14816
-MD5sum: 0b58777fff183b8176224468427709aa
-SHA1: 8004e56fada8e6715daef5f73447e557ae0ef072
-SHA256: d7ded79b82a10daf35cfec430840e79903ac15a4406148925f34a3f7c02be87d
+Size: 410972
+MD5sum: 339c737df1876cee77d11e0e59c2b4a2
+SHA1: 956cbbe30800c58597bcabcfc27dedf0c2b315e8
+SHA256: 5213306bdc074c2200bfc11609336fbe1f28b647d46797f4ee77d6c579cd55cd
 Section: audio
 Priority: optional
 Multi-Arch: foreign
