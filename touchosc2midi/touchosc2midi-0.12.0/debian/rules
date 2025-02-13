@@ -7,9 +7,7 @@
 
 override_dh_auto_install:
 	PYBUILD_INSTALL_ARGS="--prefix=/usr/local" pybuild --install
-	cp -r debian/tmp/* debian/touchosc2midi/
-	dh_install
-	rm -rf debian/tmp
+	mv debian/tmp/* debian/touchosc2midi/
 
 override_dh_python3:
 	dh_python3 --no-ext-rename -O--buildsystem=pybuild
