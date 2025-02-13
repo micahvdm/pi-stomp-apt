@@ -12,7 +12,6 @@ override_dh_auto_install:
 	mv debian/browsepy/local/ debian/browsepy/usr/
 	mkdir -p debian/browsepy/usr/local/lib/
 	mv debian/browsepy/lib/python3.11/ debian/browsepy/usr/local/lib/
-	mv debian/browsepy/usr/share/ debian/browsepy/usr/local/
 
 override_dh_python3:
 	dh_python3 --no-ext-rename -O--buildsystem=pybuild
