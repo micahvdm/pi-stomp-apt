@@ -11,8 +11,6 @@ override_dh_python3:
 
 override_dh_auto_test:
 
-override_dh_usrlocal:
-
 override_dh_installsystemd:
 	dh_installsystemd --name=mod-ui --restart-after-upgrade
 	dh_installsystemd --name=mod-update --no-enable --no-start --no-stop-on-upgrade mod-update.service

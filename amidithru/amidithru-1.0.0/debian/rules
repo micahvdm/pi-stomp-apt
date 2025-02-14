@@ -8,7 +8,5 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 
-override_dh_usrlocal:
-
 override_dh_installsystemd:
 		dh_installsystemd  --name=amidithru --restart-after-upgrade

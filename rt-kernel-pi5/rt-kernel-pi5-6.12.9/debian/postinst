@@ -4,10 +4,10 @@ CONFIG_FILE="/boot/firmware/config.txt"
 KERN1=6.12.9-v8-16k+
 KERN2=pi5-rt
 
-mkdir -p /boot/firmware/$KERN1/o/
-cp -d /usr/lib/$KERN1/overlays/* /boot/firmware/$KERN2/o/
-cp -dr /usr/lib/$KERN1/* /boot/firmware/$KERN2/
-cp -d /usr/lib/$KERN1/broadcom/* /boot/firmware/$KERN2/
+mkdir -p /boot/firmware/$KERN2/o/
+cp -d /usr/lib/linux-image-$KERN1/overlays/* /boot/firmware/$KERN2/o/
+cp -dr /usr/lib/linux-image-$KERN1/* /boot/firmware/$KERN2/
+cp -d /usr/lib/linux-image-$KERN1/broadcom/* /boot/firmware/$KERN2/
 touch /boot/firmware/$KERN2/o/README
 mv /boot/vmlinuz-$KERN1 /boot/firmware/$KERN2/
 mv /boot/initrd.img-$KERN1 /boot/firmware/$KERN2/
