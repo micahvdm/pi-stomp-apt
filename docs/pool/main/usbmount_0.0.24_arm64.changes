@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 07 Nov 2017 12:01:00 +0000
+Source: usbmount
+Binary: usbmount
+Architecture: all
+Version: 0.0.24
+Distribution: unstable
+Urgency: medium
+Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Changed-By: Mathieu Letendre-Jauniaux <mathieulj@gmail.com>
+Description:
+ usbmount   - automatically mount removable storage devices
+Changes:
+ usbmount (0.0.24) unstable; urgency=medium
+ .
+   * Use systemd to manage [dis]mounting (based on https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=774149#177)
+Checksums-Sha1:
+ a6535308cb6d865f2ba5fc537ae68da22ea33c74 14332 usbmount_0.0.24_all.deb
+ e7773b6d4a8101777afa044058d83fb88564fc35 4977 usbmount_0.0.24_arm64.buildinfo
+Checksums-Sha256:
+ 6c55f6ae4d9fff6358c8ba0032eb68c7ac7d927403466a118a14632ba91dcad7 14332 usbmount_0.0.24_all.deb
+ fa152838dd5a3509971dbf29e93ab21898526ba04208162a1a87b25d6ae57ce7 4977 usbmount_0.0.24_arm64.buildinfo
+Files:
+ 869dcaf001332b0f1269b9af49061364 14332 admin extra usbmount_0.0.24_all.deb
+ f873cc0044c8ebeab04a8c109e7fa9f6 4977 admin extra usbmount_0.0.24_arm64.buildinfo
